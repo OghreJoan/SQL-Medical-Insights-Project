@@ -1,12 +1,12 @@
 SELECT distinct Room_no, Date_of_Adm, Hosp_name, Med_condition, Amt, Disch_date
 FROM hospitaldataset
-WHERE Date_of_Adm BETWEEN '2023-01-01' AND '2024-12-31'
+WHERE Date_of_Adm BETWEEN '2023-01-01' AND '2024-12-31';
 SELECT DISTINCT h.Hosp_name, d.Doc_name
 FROM hospitaldataset h
 LEFT JOIN hospitaldataset d ON h.Room_no = d.Room_no
 WHERE h.Hosp_name IS NOT NULL AND d.Doc_name IS NOT NULL;
 SELECT DISTINCT Doc_name
-FROM hospitaldataset 
+FROM hospitaldataset; 
 SELECT COUNT(DISTINCT Hosp_name) AS Total_Unique_Hospital, 
 COUNT(DISTINCT Doc_name) AS Total_Unique_Doc,
 COUNT(DISTINCT Med_condition) AS Total_Unique_Condition,
