@@ -1,59 +1,87 @@
 # data-analytics-portfolio
-Welcome to my Data Analytics Portfolio! This repository showcases my projects demonstrating expertise in data analytics, Python, SQL, and data visualization.
+SQL Data Analysis Project
 
-Projects
+Introduction
 
-1. Python Correlation Analysis
+This project showcases an SQL-based data analysis conducted to extract insights from a structured dataset. The objective was to perform data cleaning, aggregation, and query optimization to generate meaningful results for business decision-making.
 
-This project explores correlation analysis using Python to identify relationships between variables in a dataset. The project includes:
+Project Overview
 
-Data collection and preprocessing
+Project Name: SQL Data Analysis
 
-Exploratory Data Analysis (EDA)
+Tools Used: MySQL
 
-Correlation matrix and heatmap visualization
+Data Source: Hospital Dataset
 
-Insights and conclusions
+Key Focus Areas: Data cleaning, querying, aggregation, and reporting
 
-Technologies Used:
+Data Cleaning Process
 
-Python (Pandas, NumPy, Seaborn, Matplotlib)
+Handling Missing Values:
 
-Jupyter Notebook
+Used IS NULL and COALESCE() to detect and replace missing values.
 
-2. SQL Data Cleaning
+Removing Duplicates:
 
-This project focuses on cleaning and transforming raw data using SQL to improve data quality and consistency. The project includes:
+Utilized DISTINCT to remove redundant data entries.
 
-Handling missing values
+Data Type Standardization:
 
-Removing duplicates
+Ensured column data types were appropriate (e.g., dates in DATE format, numerical values in INT/FLOAT).
 
-Standardizing data formats
+Normalization:
 
-Identifying and correcting anomalies
+Structured data into separate tables to reduce redundancy using JOIN operations.
 
-Technologies Used:
+Data Validation:
 
-SQL (MySQL)
+Used constraints (PRIMARY KEY, FOREIGN KEY, CHECK) to enforce data integrity.
 
-DBMS (MySQL)
+SQL Queries and Analysis
 
-How to Use This Repository
+Key Queries Executed:
 
-Clone the repository:
+Extracting Unique Room and Admission Data:
 
-git clone https://github.com/OghreJoan/data-analytics-portfolio.git
+SELECT DISTINCT Room_no, Date_of_Adm, Hosp_name, Med_condition, Amt, Disch_date
+FROM hospitaldataset
+WHERE Date_of_Adm BETWEEN '2023-01-01' AND '2024-12-31';
 
-Navigate to the project folder and explore the Jupyter notebooks and SQL scripts.
+Hospital and Doctor Pairing:
 
-Follow the README files in individual project directories for execution instructions.
+SELECT DISTINCT h.Hosp_name, d.Doc_name
+FROM hospitaldataset h
+LEFT JOIN hospitaldataset d ON h.Room_no = d.Room_no
+WHERE h.Hosp_name IS NOT NULL AND d.Doc_name IS NOT NULL;
 
-Contact
+Counting Unique Attributes:
 
-Feel free to connect with me for collaboration or feedback!
+SELECT COUNT(DISTINCT Hosp_name) AS Total_Unique_Hospital,
+       COUNT(DISTINCT Doc_name) AS Total_Unique_Doc,
+       COUNT(DISTINCT Med_condition) AS Total_Unique_Condition
+FROM hospitaldataset;
 
-Email: oghenefejirojoan9@gmail.com
+Insights and Findings
 
-Thank you for visiting my portfolio! 🚀
+Identified the most frequently occurring medical conditions in different hospitals.
+
+Analyzed the distribution of medical expenses among patients.
+
+Established relationships between doctors and hospitals.
+
+Determined the average duration of patient stays in different hospitals.
+
+Recommendations
+
+Data Integrity: Hospitals should enforce constraints to maintain consistency.
+
+Efficient Storage: Data normalization should be implemented to improve query performance.
+
+Advanced Reporting: Integrate Power BI for more in-depth visual analytics.
+
+Conclusion
+
+This SQL project demonstrates how structured query language (SQL) can be used to clean, process, and extract valuable insights from hospital data. The findings provide actionable recommendations to improve hospital data management and reporting systems. This project serves as a strong portfolio piece showcasing database querying and data analysis skills.
+
+
 
