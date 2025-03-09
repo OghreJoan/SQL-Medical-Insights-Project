@@ -1,4 +1,4 @@
-# data-analytics-portfolio
+# SQL-Medical-Insights-Project
 SQL Data Analysis Project
 
 Introduction
