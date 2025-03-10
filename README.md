@@ -9,7 +9,7 @@ This project showcases an SQL-based data analysis conducted to extract insights 
 
 Project Name: Medical Insights
 
-Tools Used: **MySQL**, **Power BI**
+Tools Used: **MySQL** for cleaning and transformation, **Power BI** for Visualization.
 
 Data Source: Kaggle
 
@@ -37,29 +37,13 @@ Data Validation:
 
 Used constraints (PRIMARY KEY, FOREIGN KEY, CHECK) to enforce data integrity.
 
-**SQL Queries and Analysis**
+**Key Performance Indicators (KPIs)**
 
-Key Queries Executed:
+The dashboard tracks the following KPIs:
 
-Extracting Unique Room and Admission Data:
-
-SELECT DISTINCT Room_no, Date_of_Adm, Hosp_name, Med_condition, Amt, Disch_date
-FROM hospitaldataset
-WHERE Date_of_Adm BETWEEN '2023-01-01' AND '2024-12-31';
-
-Hospital and Doctor Pairing:
-
-SELECT DISTINCT h.Hosp_name, d.Doc_name
-FROM hospitaldataset h
-LEFT JOIN hospitaldataset d ON h.Room_no = d.Room_no
-WHERE h.Hosp_name IS NOT NULL AND d.Doc_name IS NOT NULL;
-
-Counting Unique Attributes:
-
-SELECT COUNT(DISTINCT Hosp_name) AS Total_Unique_Hospital,
-       COUNT(DISTINCT Doc_name) AS Total_Unique_Doc,
-       COUNT(DISTINCT Med_condition) AS Total_Unique_Condition
-FROM hospitaldataset;
+Total Medical Expenses: $379.8M
+Total Patients: 497K
+Total Medical Cases Analyzed: 901
 
 **Insights and Findings**
 
