@@ -1,11 +1,21 @@
 # SQL-Medical-Insights-Project
 SQL Data Analysis Project
 
-INTRODUCTION
+**INTRODUCTION**
 
 This project showcases an SQL-based data analysis conducted to extract insights from a structured dataset. The objective was to perform data cleaning, aggregation, and query optimization to generate meaningful results for business decision-making.
 
-**Project Overview**
+**BUSINESS PROBLEM STATEMENT**
+Hospitals and healthcare providers face challenges in managing medical costs, optimizing patient care, and improving resource allocation. The rising cost of medications, prolonged hospital stays, and varying case counts make it difficult for decision-makers to balance cost efficiency with quality healthcare delivery.
+
+This project aims to analyze medical expenses, patient distribution, duration of hospital stays, and medication costs to provide data-driven insights that can help:
+
+* Identify high-cost medical conditions and medications
+* Optimize patient admission and discharge processes
+* Reduce unnecessary healthcare expenses
+* Improve hospital resource management
+
+**PROJECT OVERVIEW**
 
 Project Name: Medical Insights
 
@@ -15,7 +25,7 @@ Data Source: Kaggle
 
 Key Focus Areas: Data cleaning, querying, aggregation, and reporting
 
-**Data Cleaning Process**
+**DATA CLEANING PROCESS**
 
 Handling Missing Values:
 
@@ -37,7 +47,7 @@ Data Validation:
 
 Used constraints (PRIMARY KEY, FOREIGN KEY, CHECK) to enforce data integrity.
 
-**Key Performance Indicators (KPIs)**
+**KEY PERFORMANCE INDICATORS (KPIs)**
 
 The dashboard tracks the following KPIs:
 
@@ -45,7 +55,7 @@ Total Medical Expenses: $379.8M
 Total Patients: 497K
 Total Medical Cases Analyzed: 901
 
-**Insights and Findings**
+**INSIGHTS & FINDINGS**
 
 Identified the most frequently occurring medical conditions in different hospitals.
 
@@ -75,7 +85,7 @@ More reccomendations in Statement Powerpoint!!
 
 
 
-**Conclusion**
+**CONCLUSION**
 
 This SQL project demonstrates how structured query language (SQL) can be used to clean, process, and extract valuable insights from hospital data. The findings provide actionable recommendations to improve hospital data management and reporting systems. This project serves as a strong portfolio piece showcasing database querying and data analysis skills.
 
