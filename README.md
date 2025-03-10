@@ -79,6 +79,18 @@ Determined the average duration of patient stays in different hospitals.
 
 **Advanced Reporting**: Integrate Power BI for more in-depth visual analytics.
 
+**Optimize medication procurement strategies to reduce high costs.**
+
+**Explore alternative treatment methods to lower expenses.​**
+
+**Reduce hospital stay through better outpatient management.​**
+
+**Forecast seasonal trends in admissions to optimize budget allocation.​**
+
+More reccomendations in Statement Powerpoint!!
+
+
+
 **Conclusion**
 
 This SQL project demonstrates how structured query language (SQL) can be used to clean, process, and extract valuable insights from hospital data. The findings provide actionable recommendations to improve hospital data management and reporting systems. This project serves as a strong portfolio piece showcasing database querying and data analysis skills.
