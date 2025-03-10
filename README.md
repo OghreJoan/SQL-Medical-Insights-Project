@@ -1,21 +1,21 @@
 # SQL-Medical-Insights-Project
 SQL Data Analysis Project
 
-Introduction
+INTRODUCTION
 
 This project showcases an SQL-based data analysis conducted to extract insights from a structured dataset. The objective was to perform data cleaning, aggregation, and query optimization to generate meaningful results for business decision-making.
 
-Project Overview
+**Project Overview**
 
-Project Name: SQL Data Analysis
+Project Name: Medical Insights
 
-Tools Used: MySQL
+Tools Used: **MySQL**, **Power BI**
 
-Data Source: Hospital Dataset
+Data Source: Kaggle
 
 Key Focus Areas: Data cleaning, querying, aggregation, and reporting
 
-Data Cleaning Process
+**Data Cleaning Process**
 
 Handling Missing Values:
 
@@ -37,7 +37,7 @@ Data Validation:
 
 Used constraints (PRIMARY KEY, FOREIGN KEY, CHECK) to enforce data integrity.
 
-SQL Queries and Analysis
+**SQL Queries and Analysis**
 
 Key Queries Executed:
 
@@ -61,7 +61,7 @@ SELECT COUNT(DISTINCT Hosp_name) AS Total_Unique_Hospital,
        COUNT(DISTINCT Med_condition) AS Total_Unique_Condition
 FROM hospitaldataset;
 
-Insights and Findings
+**Insights and Findings**
 
 Identified the most frequently occurring medical conditions in different hospitals.
 
@@ -71,7 +71,7 @@ Established relationships between doctors and hospitals.
 
 Determined the average duration of patient stays in different hospitals.
 
-Recommendations
+**RECOMMENDATION**
 
 Data Integrity: Hospitals should enforce constraints to maintain consistency.
 
@@ -79,7 +79,7 @@ Efficient Storage: Data normalization should be implemented to improve query per
 
 Advanced Reporting: Integrate Power BI for more in-depth visual analytics.
 
-Conclusion
+**Conclusion**
 
 This SQL project demonstrates how structured query language (SQL) can be used to clean, process, and extract valuable insights from hospital data. The findings provide actionable recommendations to improve hospital data management and reporting systems. This project serves as a strong portfolio piece showcasing database querying and data analysis skills.
 
