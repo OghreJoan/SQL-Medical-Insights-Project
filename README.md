@@ -73,11 +73,11 @@ Determined the average duration of patient stays in different hospitals.
 
 **RECOMMENDATION**
 
-Data Integrity: Hospitals should enforce constraints to maintain consistency.
+**Data Integrity**: Hospitals should enforce constraints to maintain consistency.
 
-Efficient Storage: Data normalization should be implemented to improve query performance.
+**Efficient Storage**: Data normalization should be implemented to improve query performance.
 
-Advanced Reporting: Integrate Power BI for more in-depth visual analytics.
+**Advanced Reporting**: Integrate Power BI for more in-depth visual analytics.
 
 **Conclusion**
 
